@@ -3,10 +3,12 @@
 function incioCreado(estado) {
     if (estado == "iniciar") {
         crearcuenta.classList.toggle("ocultar");
+        iniciarsesion.classList.toggle("ocultar");
         titulo.textContent = "Iniciar sesión";
         console.log("iniciar")
     } else if (estado == "crear") {
         crearcuenta.classList.toggle("ocultar");
+        iniciarsesion.classList.toggle("ocultar");
         titulo.textContent = "Crear cuenta";
         console.log("crear")
     }

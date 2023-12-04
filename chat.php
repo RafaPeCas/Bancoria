@@ -15,11 +15,14 @@
     <h1>Chattoria</h1>
     <div class="ventanaChat">
         <div class="chat">
-            <?php
-            include("php/queryChat.php");
-            ?>
+            <div class="mensajes">
+                <?php
+                include("php/queryChat.php");
+                ?>
+            </div>
+
             <form action="php/enviarMensaje.php" id="gug" method="post" class="d-flex position-relative align-items-end justify-content-end">
-                <input type="text" class="form-control teclado" name="mensaje" id="mensaje" required> 
+                <input type="text" class="form-control teclado" name="mensaje" id="mensaje" required>
                 <input type="submit" value="enviar" class="g">
             </form>
         </div>

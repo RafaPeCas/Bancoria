@@ -1,11 +1,10 @@
 <?php
 
 include("conexion.php");
-include("registro");
-$chat=1;
-$emisor=2;
+$chat=2;
+$emisor=5;
 
-$consulta = "SELECT * FROM mensaje";
+$consulta = "SELECT * FROM mensaje WHERE id_chat='$chat'";
 $resultado = mysqli_query($conexion, $consulta) or die("Algo ha ido mal en la consulta a la base de datos");
 
 

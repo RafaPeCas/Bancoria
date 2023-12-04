@@ -26,6 +26,7 @@ function generarIban()
         $i = 4 - strlen($nombret);
         while ($i > 0) {
             $nombret .= "z";
+            $i--;
         }
     }
     for ($i = 0; $i < 4; $i++) {
