@@ -20,7 +20,7 @@
             <h1 class="">BANCORIA</h1>
         </section>
         <section>
-
+            <div id="reloj"></div>
 
             <div class="sesion">
                 <h2 id="titulo">Crear usuario:</h2>
@@ -40,7 +40,7 @@
                             <div class="nombre d-flex justify-content-around">
                                 <div class="mb-3 col-6 px-2">
                                     <label for="dni" class="form-label">DNI</label>
-                                    <input type="text" class="form-control" name="dni" id="dni" required>
+                                    <input type="text" class="form-control" name="dni" id="dni" onclick="validarDNI()" required>
                                 </div>
                                 <div class="mb-3 col-6 px-2">
                                     <label for="fNac" class="form-label">Fecha de nacimiento</label>
@@ -48,28 +48,28 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-3 px-2">
                                 <label for="email" class="form-label">Correo electrónico</label>
                                 <input type="email" class="form-control" name="email" id="email" required>
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-3 px-2">
                                 <label for="direccion" class="form-label">Dirección</label>
                                 <input type="text" class="form-control" name="direccion" id="direccion" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 px-2">
                                 <label for="cp" class="form-label">Código postal</label>
                                 <input type="number" class="form-control" name="cp" id="cp" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 px-2">
                                 <label for="ciudad" class="form-label">Ciudad</label>
                                 <input type="text" class="form-control" name="ciudad" id="ciudad" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 px-2">
                                 <label for="provincia" class="form-label">Provincia</label>
                                 <input type="text" class="form-control" name="provincia" id="provincia" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 px-2">
                                 <label for="pais" class="form-label">País</label>
                                 <input type="text" class="form-control" name="pais" id="pais" required>
                             </div>

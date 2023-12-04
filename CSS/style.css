@@ -1,18 +1,64 @@
-
-.ocultar{
+.ocultar {
     display: none;
 }
 
-.caja{
+.caja {
     display: flex;
     flex-direction: column;
     border: 2px black solid;
     padding: 15px;
 }
 
-.sesion{
+.sesion {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#reloj {
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+}
+
+.enviado {
+    background-color: rgba(43, 142, 255, 0.527);
+    align-self: flex-end;
+}
+
+.recibido {
+    background-color: rgba(128, 128, 128, 0.671);
+    align-self: flex-start;
+}
+
+.chat {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 8px;
+    border-radius: 15px;
+    width: 80%;
+}
+
+.ventanaChat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.teclado{
+    height: 100%;
+}
+
+.g{
+    position: absolute;
+    height: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
