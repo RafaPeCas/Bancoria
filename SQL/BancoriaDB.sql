@@ -39,8 +39,8 @@ CREATE TABLE chat (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	id_usuario_1 int,
 	id_usuario_2 int,
-	FOREIGN KEY (id_usuario_1) REFERENCES usuario(id),
-	FOREIGN KEY (id_usuario_2) REFERENCES usuario(id)
+	FOREIGN KEY (id_usuario_1) REFERENCES usuarios(id),
+	FOREIGN KEY (id_usuario_2) REFERENCES usuarios(id)
 );
 
 CREATE TABLE mensaje (
@@ -50,13 +50,12 @@ CREATE TABLE mensaje (
     fecha_msg DATETIME,
 	mensaje VARCHAR(500),
     FOREIGN KEY (id_chat) REFERENCES chat(id),
-    FOREIGN KEY (emisor) REFERENCES usuario(id)
+    FOREIGN KEY (emisor) REFERENCES usuarios(id)
 );
 
 INSERT INTO usuarios (nombre, apellidos,IBAN, pass, DNI, email, fecha_nacimiento, direccion, cp, ciudad, provincia, pais, fecha_registro) VALUES
-("admin","","","admin", "","","2023-11-27","","","","","","2023-11-27"),
-("torovi","torover torover","101010101010","torovi", "20062277k","torovi@torovi.com","2023-12-04","leon XIII","41500","Sevilla","Sevilla","España","2023-12-04"),
+("admin","","admin","admin", "admin","","2023-11-27","","","","","","2023-11-27"),
 ("torovi2","torover torover2","1010101010101","torovi2", "20062277k","torovi@torovi.com","2023-12-04","leon XIII","41500","Sevilla","Sevilla","España","2023-12-04");
 
-INSERT INTO chat (id_usuario_e, id_usuario_r) VALUES (2, 3);
+INSERT INTO chat (id_usuario_1, id_usuario_2) VALUES (1, 2);
 

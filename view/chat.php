@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <script defer src="JS/script.js"></script>
-    <script defer src="JS/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script defer src="../JS/script.js"></script>
+    <script defer src="../JS/bootstrap.bundle.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <div class="chat">
             <div class="mensajes">
                 <?php
-                include("php/queryChat.php");
+                // include("../Controller/queryChat.php");
                 ?>
             </div>
 

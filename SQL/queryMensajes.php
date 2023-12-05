@@ -1,13 +1,13 @@
 <?php
 
-include("conexion.php");
-$chat=2;
-$emisor=5;
+require_once("conexion.php");
 
-$consulta = "SELECT * FROM mensaje WHERE id_chat='$chat'";
-$resultado = mysqli_query($conexion, $consulta) or die("Algo ha ido mal en la consulta a la base de datos");
+$consulta = $conexion->prepare("SELECT * FROM mensaje WHERE id_chat= ?");
+$consulta->bind_param("s",$chat);
+$consulta->execute();
+$resultado = $consulta->get_result();
 
-
+// Esto tiene que ir en el controlador
 if (mysqli_num_rows($resultado) > 0) {
     while ($fila = mysqli_fetch_assoc($resultado)) {
         if ($fila["emisor"]==$emisor){

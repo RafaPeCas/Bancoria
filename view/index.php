@@ -5,10 +5,10 @@
     <title>Title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <script defer src="JS/bootstrap.bundle.js"></script>
-    <script defer src="JS/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <script defer src="../JS/bootstrap.bundle.js"></script>
+    <script defer src="../JS/script.js"></script>
 </head>
 
 <body>
@@ -81,8 +81,8 @@
                     <div class="ocultar" id="iniciarsesion">
                         <form action="php/validador.php" id="registrarUser" method="post">
                             <div class="mb-3">
-                                <label for="email" class="form-label guga">Correo electronico</label>
-                                <input type="email" class="form-control" name="email" id="email" required>
+                                <label for="dni" class="form-label guga">DNI</label>
+                                <input type="text" class="form-control" name="dni" id="dni" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>

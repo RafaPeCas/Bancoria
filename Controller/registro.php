@@ -36,9 +36,9 @@ function generarIban()
     return $iban;
 }
 
-$consulta = "INSERT INTO usuarios (nombre, apellidos, IBAN, pass, DNI, email, fecha_nacimiento, direccion, cp, ciudad, provincia, pais, fecha_registro) VALUES ('$nombre', '$apellidos', '$iban', '$pass', '$dni', '$email', '$fecha_nacimiento', '$direccion', '$cp', '$ciudad', '$provincia', '$pais', '$fecha_actual')";
-$resultado = mysqli_query($conexion, $consulta) or die("Algo ha ido mal en la consulta a la base de datos");
+
 
 ?>
 
 <h1>Usuario registrado correctamente</h1>
+<a href="chats.php"><button> chats </button></a>
